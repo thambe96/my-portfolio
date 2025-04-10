@@ -1,0 +1,938 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+
+    background-color: paleturquoise;
+    color: white;
+
+    background-color: black;
+
+    /*color: white;*/
+    /*background-color: black;*/
+}
+
+
+/*a {*/
+/*    text-decoration: none;*/
+/*    color: black;*/
+/*    font-weight: bold;*/
+/*    margin: 3px;*/
+/*}*/
+
+/*.header {*/
+
+/*    !*width: 100px;*!*/
+/*    !*height: 20px;*!*/
+/*    !*background-color: red;*!*/
+
+/*    position: relative;*/
+/*}*/
+
+/*.nav-items {*/
+
+/*    !*width: fit-content;*!*/
+/*    !*height: fit-content;*!*/
+
+/*    background-color: red;*/
+
+/*    position: relative;*/
+
+/*    !*position: absolute;*!*/
+
+/*    !*top: 0;*!*/
+/*    !*right: 100px;*!*/
+/*    !*bottom: 0;*!*/
+
+/*    !*margin: auto;*!*/
+
+/*}*/
+
+/*.logo {*/
+/*    color: purple;*/
+/*    background-color: deeppink;*/
+/*}*/
+
+
+/*.navigation-bar {*/
+
+/*    border: 2px solid black;*/
+
+/*    display: grid;*/
+
+/*    grid-template-rows: repeat(1, 1fr);*/
+/*    grid-template-columns: repeat(2, 1fr);*/
+
+
+/*}*/
+
+
+
+/*-------------------------------Navigation Section---------------------------------------------*/
+
+
+.nav-items>ul {
+
+    list-style: none;
+    width: fit-content;
+    height: fit-content;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    padding-right: 100px;
+
+    margin: auto;
+
+}
+
+.nav-items>ul>li {
+    display: inline;
+
+}
+
+.nav-items>ul>li>a {
+    text-decoration: none;
+    /*color: black;*/
+    font-weight: bold;
+    font-size: 22px;
+
+    margin: 20px;
+
+}
+
+
+.navigation-bar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    /*border: 5px solid forestgreen;*/
+
+}
+
+.nav-items {
+
+    position: relative;
+    /*border: 5px solid fuchsia;*/
+
+}
+
+.header {
+    position: relative;
+}
+
+.logo {
+    position: relative;
+    /*border: 5px solid deepskyblue;*/
+}
+
+.logo>h1 {
+    /*padding-left: 50px;*/
+    margin-bottom: 0;
+    margin-top: 0;
+
+    width: fit-content;
+    height: fit-content;
+    margin-left: 10px;
+    /*background-color: purple;*/
+
+
+
+}
+
+/*-------------------------------Navigation Section---------------------------------------------*/
+
+
+
+
+
+
+
+
+/*-------------------------------Hero Section---------------------------------------------*/
+
+#hero-container {
+
+    /*border: 5px solid gray;*/
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
+
+
+
+
+#hero-container > div {
+
+    /*border: 2px solid purple;*/
+    margin: 5px;
+
+    position: relative;
+
+}
+
+
+/*--------------------------------------- Image1 Hero Section -----------------------------------*/
+
+
+/*#img1 {*/
+
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+
+/*    margin: auto;*/
+
+/*}*/
+
+/*--------------------------------------- Image1 Hero Section -----------------------------------*/
+
+
+
+
+
+#hero-container-col-left {
+
+    /*border: 5px solid purple;*/
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+
+.detial-text {
+
+
+    /*width: fit-content;*/
+    /*height: fit-content;*/
+    width: 100%;
+    height: fit-content;
+    /*border: 5px solid forestgreen;*/
+    align-self: start;
+
+    margin-top: 50px;
+
+
+
+}
+
+.detial-text>h3 {
+
+    font-size: 40px;
+
+}
+
+.detial-text>h1 {
+
+    font-size: 70px;
+
+}
+
+.detial-text>h2 {
+
+    font-size: 45px;
+
+}
+
+.detial-text>p {
+
+    font-size: 20px;
+
+}
+
+
+
+#social-handles {
+
+    width: fit-content;
+    height: fit-content;
+    /*border: 5px solid green;*/
+
+    /*align-self: center;*/
+
+    /*margin-left: 111px;*/
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+
+
+}
+
+
+#social-handles>a>img {
+
+    width: fit-content;
+    height: fit-content;
+
+}
+
+
+
+
+.btn-cv-download {
+
+    /*width: 100px;*/
+    /*height: 10px;*/
+    /*border: 5px solid green;*/
+
+
+
+    /*align-self: center;*/
+
+    /*margin-left: 111px;*/
+
+}
+
+
+.btn-cv-download>button {
+
+    width: 210px;
+    height: 45px;
+    background-color: aqua;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    border-radius: 10px;
+
+
+}
+
+
+
+
+
+
+
+
+
+#hero-container-col-right {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+
+#img1 {
+
+
+    width: 485px;
+    border: 2px solid aqua;
+    border-radius: 20px;
+
+    /*margin-left: 300px;*/
+    align-self: center;
+    margin-top: 0;
+    /*align-self: end;*/
+
+
+}
+
+
+/*-------------------------------Hero Section---------------------------------------------*/
+
+
+
+
+
+
+
+/*------------------------------About me Section*----------------------------------------*/
+
+.about-me {
+
+    /*border: 5px solid gray;*/
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    /*position: relative;*/
+
+}
+
+
+
+
+
+
+.about-me > div {
+
+    /*border: 2px solid darkgrey;*/
+    margin: 5px;
+
+    position: relative;
+
+
+
+}
+
+.about-me-col-left {
+    display: flex;
+    justify-content: end;
+}
+
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#img2 {
+
+    /*padding-left: 100px;*/
+
+    width: 400px;
+    border: 2px solid aqua;
+    border-radius: 20px;
+    margin-right: 200px;
+
+
+
+}
+
+.about-me-container> h3 {
+    font-size: 45px;
+}
+
+.about-me-container> p {
+    font-size: 28px;
+}
+
+
+/*------------------------------About me Section*----------------------------------------*/
+
+
+
+
+
+/*------------------------------Projects Section*----------------------------------------*/
+
+.projects {
+
+    width: 75%;
+    height: fit-content;
+
+    /*border: 5px solid grey;*/
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
+
+
+
+
+
+.project-item {
+
+    height: 60vh;
+    /*width: 20vw;*/
+
+    border: 2px solid darkgrey;
+
+    border-radius: 25px;
+
+    margin: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /*position: relative;*/
+
+
+}
+
+
+#see-more {
+
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*background-color: red;*/
+
+}
+
+#see-more>button {
+
+    width: 250px;
+    height: 60px;
+
+    background-color: aqua;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 25px;
+    font-weight: normal;
+
+}
+
+
+
+
+
+.btn>button {
+
+    /*width: fit-content;*/
+    /*height: fit-content;*/
+
+    width: 120px;
+    height: 35px;
+
+
+    background-color: aqua;
+
+    margin-top: 10px;
+    border-radius: 5px;
+
+    border: none;
+
+    font-size: 20px;
+    /*font-weight: bold;*/
+
+
+    /*position: absolute;*/
+
+    /*bottom: 20px;*/
+    /*left: 0;*/
+    /*right: 0;*/
+
+
+    /*margin: auto;*/
+
+}
+
+
+
+
+
+
+
+.prj-name {
+
+    width: fit-content;
+    height: fit-content;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    /*position: absolute;*/
+    /*top: 20px;*/
+    /*left: 0;*/
+    /*right: 0;*/
+
+    /*margin: auto;*/
+
+}
+
+.projects-section {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+/*------------------------------Projects Section*----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------Skill Section----------------------*/
+
+
+
+.skill-section {
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.skill-card-container {
+
+    width: 75%;
+    height: fit-content;
+
+    /*border: 5px solid grey;*/
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+
+}
+
+
+
+
+
+
+
+
+.skills-card {
+
+    /*width: fit-content;*/
+    /*height: fit-content;*/
+    border: 5px solid darkgrey;
+
+    margin: 5px;
+
+    border-radius: 10px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+
+/* ------------------------------    Service Section   ---------------------------------           */
+
+
+
+.service-card-container {
+
+    width: 75%;
+    height: fit-content;
+
+    /*border: 5px solid grey;*/
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+}
+
+
+
+
+
+
+
+.service-card {
+
+    /*width: fit-content;*/
+    /*height: fit-content;*/
+    border: 2px solid darkgrey;
+    margin: 5px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+
+.service-card>h3 {
+    align-self: center;
+}
+
+.service-card>img {
+
+    align-self: center;
+    background-color: white;
+    border: 2px solid aqua;
+
+    border-radius: 5px;
+
+
+}
+
+.service-card>p {
+
+    /*align-self: center;*/
+    font-size: 15px;
+    text-align: center;
+
+}
+
+
+
+
+.services-section {
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    display: flex;
+    justify-content: center;
+
+
+
+
+}
+
+
+
+
+
+
+/* ----------------------    Contact Section     ------------------------------------------*/
+
+
+
+.contact-section {
+
+    /*border: 5px solid grey;*/
+
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.contact-inputs {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.contact-inputs>div>input {
+
+    width: 850px;
+    height: 50px;
+
+    border-radius: 10px;
+
+    border: 2px solid grey;
+
+    margin-top: 25px;
+
+}
+
+#message {
+
+    width: 850px;
+    height: 200px;
+
+    border-radius: 10px;
+
+    border: 2px solid grey;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+
+.contact-form {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact-form>button {
+
+    width: 200px;
+    height: 40px;
+
+    border: none;
+
+    background-color: aqua;
+
+    border-radius: 10px;
+
+    margin-bottom: 25px;
+
+    align-self: end;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/*    Section Breaker */
+
+
+.section-breaker {
+
+    width: 100%;
+    height: 60px;
+    /*border: 5px solid gainsboro;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.rect-shape {
+    width: 20%;
+    height: 100%;
+    border: 2px solid aqua;
+
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.shape-line {
+    width: 35%;
+    height: 2px;
+    background-color: aqua;
+}
+
+
+
+
+/*    Section Breaker */
+
+
+@media all and (max-width: 850px){
+
+    .section-breaker {
+        display: none;
+    }
+
+    .navigation-bar {
+        display: none;
+    }
+
+
+    #hero-container {
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+
+    .about-me {
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+
+
+
+}
+
+
+@media all and (max-width: 1100px) {
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+}
+
+@media all and (max-width: 855px) {
+
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+
+    .skill-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+
+
+    }
+
+
+}
+
+@media all and (max-width: 855px) {
+
+
+
+    .skill-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+
+
+    }
+
+    .service-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .contact-section {
+        display: none;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
