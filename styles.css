@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap'); /* font-family: "League Spartan", sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap'); /* font-family: "Inconsolata", monospace; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'); /* font-family: "Lato", sans-serif; */
+
+
 
 *,
 *::before,
@@ -99,6 +105,9 @@
 
 .nav-items>ul>li>a {
     text-decoration: none;
+
+    font-family: "Inconsolata", monospace;
+
     /*color: black;*/
     font-weight: bold;
     font-size: 22px;
@@ -136,6 +145,9 @@
     /*padding-left: 50px;*/
     margin-bottom: 0;
     margin-top: 0;
+
+    font-family: "League Spartan", sans-serif;
+
 
     width: fit-content;
     height: fit-content;
@@ -232,25 +244,25 @@
 }
 
 .detial-text>h3 {
-
+    font-family: "League Spartan", sans-serif;
     font-size: 40px;
 
 }
 
 .detial-text>h1 {
-
+    font-family: "League Spartan", sans-serif;
     font-size: 70px;
 
 }
 
 .detial-text>h2 {
-
+    font-family: "League Spartan", sans-serif;
     font-size: 45px;
 
 }
 
 .detial-text>p {
-
+    font-family: "Lato", sans-serif;
     font-size: 20px;
 
 }
@@ -412,10 +424,12 @@
 }
 
 .about-me-container> h3 {
+    font-family: "League Spartan", sans-serif;
     font-size: 45px;
 }
 
 .about-me-container> p {
+    font-family: "Lato", sans-serif;
     font-size: 28px;
 }
 
