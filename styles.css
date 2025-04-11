@@ -14,10 +14,15 @@
 
 * {
 
-    background-color: paleturquoise;
+    /*background-color: paleturquoise;*/
     color: white;
 
-    background-color: black;
+
+
+    background-color: #667085 /* #060606; */ /*Sable*/
+
+
+
 
     /*color: white;*/
     /*background-color: black;*/
@@ -93,9 +98,11 @@
     right: 0;
     bottom: 0;
 
-    padding-right: 100px;
+    padding-right: 30px;
 
     margin: auto;
+
+
 
 }
 
@@ -122,6 +129,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
+    padding: 20px;
+
+
+
     /*border: 5px solid forestgreen;*/
 
 }
@@ -131,6 +142,7 @@
     position: relative;
     /*border: 5px solid fuchsia;*/
 
+
 }
 
 .header {
@@ -139,6 +151,7 @@
 
 .logo {
     position: relative;
+
     /*border: 5px solid deepskyblue;*/
 }
 
@@ -146,6 +159,8 @@
     /*padding-left: 50px;*/
     margin-bottom: 0;
     margin-top: 0;
+
+    padding-left: 35px;
 
     font-family: "League Spartan", sans-serif;
 
@@ -285,6 +300,14 @@
     /*margin-left: 111px;*/
     margin-top: 30px;
 
+    background-color: #667085;
+    border-radius: 5px;
+
+    padding: 10px;
+
+    margin-left: 60px;
+
+
     display: flex;
     flex-direction: row;
     gap: 25px;
@@ -298,7 +321,10 @@
     width: fit-content;
     height: fit-content;
 
+
 }
+
+
 
 
 
@@ -322,7 +348,13 @@
 
     width: 210px;
     height: 45px;
-    background-color: aqua;
+    /*background-color: aqua;*/
+
+    border-style: none;
+
+    border: 2px solid aquamarine;
+
+    font-family: "Lato", sans-serif;
 
     margin-top: 10px;
     margin-bottom: 30px;
@@ -353,8 +385,10 @@
 
 
     width: 485px;
-    border: 2px solid aqua;
+    /*border: 2px solid aquamarine;*/
     border-radius: 20px;
+
+    box-shadow: 5px 5px 10px rgba(69, 69, 69);
 
     /*margin-left: 300px;*/
     align-self: center;
@@ -421,9 +455,11 @@
     /*padding-left: 100px;*/
 
     width: 400px;
-    border: 2px solid aqua;
+    /*border: 2px solid aquamarine;*/
     border-radius: 20px;
     margin-right: 200px;
+
+    box-shadow: 5px 5px 10px rgba(69, 69, 69);
 
 
 
@@ -432,11 +468,16 @@
 .about-me-container> h3 {
     font-family: "League Spartan", sans-serif;
     font-size: 45px;
+
 }
 
 .about-me-container> p {
     font-family: "Lato", sans-serif;
-    font-size: 28px;
+    font-size: 26px;
+    /*background-color: firebrick;*/
+
+    padding-right: 60px;
+
 }
 
 
@@ -452,6 +493,8 @@
 
     width: 75%;
     height: fit-content;
+
+
 
     /*border: 5px solid grey;*/
 
@@ -474,11 +517,16 @@
     height: 60vh;
     /*width: 20vw;*/
 
-    border: 2px solid darkgrey;
+    /*border: 2px solid lemonchiffon;*/
+    background-color: #202531;
+    box-shadow: 5px 5px 10px rgba(69, 69, 69);
 
     border-radius: 25px;
 
+
     margin: 5px;
+
+    /*background-color: #202531;*/
 
     display: flex;
     flex-direction: column;
@@ -498,21 +546,26 @@
     justify-content: center;
     align-items: center;
 
-    /*background-color: red;*/
+    /*background-color: #060606;*/
 
 }
 
 #see-more>button {
 
-    width: 250px;
-    height: 60px;
+    width: 150px;
+    height: 40px;
 
-    background-color: aqua;
+    /*background-color: aquamarine;*/
+
     border-radius: 10px;
     border: none;
+    border: 2px solid aquamarine;
 
-    font-size: 25px;
-    font-weight: normal;
+    background-color: #202531;
+
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
 
 }
 
@@ -529,14 +582,18 @@
     height: 35px;
 
 
-    background-color: aqua;
+    /*background-color: aqua;*/
 
     margin-top: 10px;
     border-radius: 5px;
 
     border: none;
+    border: 2px solid aquamarine;
 
-    font-size: 20px;
+    background-color: #202531;
+
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
     /*font-weight: bold;*/
 
 
@@ -551,6 +608,10 @@
 
 }
 
+.btn {
+    background-color: #202531;
+}
+
 
 
 
@@ -562,6 +623,8 @@
     width: fit-content;
     height: fit-content;
 
+    /*background-color: #202531;*/
+    background-color: #202531;
 
     font-family: "League Spartan", sans-serif;
     font-size: 30px;
@@ -616,6 +679,7 @@
     width: 75%;
     height: fit-content;
 
+
     /*border: 5px solid grey;*/
 
     display: grid;
@@ -636,11 +700,17 @@
 
     /*width: fit-content;*/
     /*height: fit-content;*/
-    border: 5px solid darkgrey;
+
+    /*border: 2px solid lemonchiffon;*/
+    background-color: #202531;
+
+    box-shadow: 5px 5px 10px rgba(69, 69, 69);
 
     margin: 5px;
 
     border-radius: 10px;
+
+    /*background-color:  #0A0E15;*/
 
     position: relative;
 
@@ -649,6 +719,12 @@
 
 
 }
+
+.skills-card > img {
+    background-color: #202531;
+}
+
+
 
 
 
@@ -679,9 +755,14 @@
 
     /*width: fit-content;*/
     /*height: fit-content;*/
-    border: 2px solid darkgrey;
+    /*border: 2px solid lemonchiffon;*/
+
+    box-shadow: 5px 5px 10px rgba(69, 69, 69);
+
     margin: 5px;
     border-radius: 15px;
+
+    background-color: #202531;
 
     display: flex;
     flex-direction: column;
@@ -695,8 +776,15 @@
     font-family: "League Spartan", sans-serif;
     font-size: 25px;
     text-align: center;
+    background-color: #202531;
     /*align-self: center;*/
 }
+
+
+.service-card>h3>b {
+    background-color: #202531;
+}
+
 
 .service-card>img {
 
@@ -718,6 +806,8 @@
     text-align: center;
     padding-left: 15px;
     padding-right: 15px;
+
+    background-color: #202531;
 
 }
 
@@ -763,6 +853,7 @@
     display: flex;
     flex-direction: column;
 
+
 }
 
 
@@ -773,11 +864,32 @@
 
     border-radius: 10px;
 
-    border: 2px solid grey;
+    border: 2px solid lemonchiffon;
 
     margin-top: 25px;
 
+    /*background-color: #202531;*/
+
+
 }
+
+.contact-inputs>div>input::placeholder {
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+    position: relative;
+    left: 10px;
+}
+
+.contact-inputs>div>textarea::placeholder {
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+
+    position: relative;
+    top: 80px;
+    left: 10px;
+
+}
+
 
 #message {
 
@@ -786,10 +898,12 @@
 
     border-radius: 10px;
 
-    border: 2px solid grey;
+    border: 2px solid lemonchiffon;
 
     margin-top: 25px;
     margin-bottom: 25px;
+
+    /*background-color: #202531;*/
 
 }
 
@@ -801,6 +915,10 @@
 
 }
 
+
+
+
+
 .contact-form>button {
 
     width: 200px;
@@ -808,11 +926,16 @@
 
     border: none;
 
-    background-color: aqua;
+    /*background-color: aqua;*/
+    border: 2px solid aquamarine;
 
     border-radius: 10px;
 
     margin-bottom: 25px;
+
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
 
     align-self: end;
 
@@ -846,7 +969,7 @@
 .rect-shape {
     width: 20%;
     height: 100%;
-    border: 2px solid aqua;
+    border: 2px solid aquamarine;
 
     border-radius: 15px;
 
@@ -871,7 +994,7 @@
 .shape-line {
     width: 35%;
     height: 2px;
-    background-color: aqua;
+    background-color: aquamarine;
 }
 
 
