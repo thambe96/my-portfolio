@@ -1146,36 +1146,12 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------ End of the Animation    --------------------------- */
+
+
+
+
+
 
 
 
@@ -1238,10 +1214,15 @@ body {
 
 
 .service-card>h3 {
+
     font-family: "League Spartan", sans-serif;
     font-size: 25px;
     text-align: center;
     background-color: #202531;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
     /*align-self: center;*/
 }
 
@@ -1271,6 +1252,9 @@ body {
     text-align: center;
     padding-left: 15px;
     padding-right: 15px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
 
     background-color: #202531;
 
