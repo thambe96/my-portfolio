@@ -10,6 +10,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
 }
 
 * {
@@ -19,13 +20,17 @@
 
 
 
-    background-color: #667085 /* #060606; */ /*Sable*/
+    /*background-color: #667085 !* #060606; *! !*Sable*!*/
 
 
 
 
     /*color: white;*/
     /*background-color: black;*/
+}
+
+body {
+    background-color: #0b0d15;/*#667085;*/
 }
 
 
@@ -91,7 +96,15 @@
 
     list-style: none;
     width: fit-content;
-    height: fit-content;
+    height: 100%/*fit-content*/;
+
+    /*background: #008cff;*/
+
+
+    display: flex;
+
+
+    /*
 
     position: absolute;
     top: 0;
@@ -102,12 +115,24 @@
 
     margin: auto;
 
+    */
+
+
 
 
 }
 
 .nav-items>ul>li {
-    display: inline;
+
+    /*width: fit-content;*/
+    width: max-content;
+    height: 100%;
+    /*display: inline;*/
+    /*height: 100%;*/
+
+
+    /*background: crimson;*/
+
 
 }
 
@@ -122,7 +147,106 @@
 
     margin: 20px;
 
+
 }
+
+/*--------- Adding an transition to Navigation items ------------*/
+
+
+
+/* Target individual list items directly */
+.nav-items > ul > li {
+    position: relative; /* Make sure this is added for absolute positioning */
+    transition: color 0.3s ease;
+    /* Any other styling for nav items */
+}
+
+/* Bottom border that expands horizontally */
+.nav-items > ul > li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #008cff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    z-index: 1; /* Ensure it's above background but below text */
+}
+
+/* Background fill that expands vertically */
+.nav-items > ul > li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,140,255, 0.3); /* Semi-transparent blue */
+    z-index: -1; /* Behind text */
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s 0.1s ease; /* Small delay after border appears */
+}
+
+/* These are already correct - the hover applies to individual items */
+.nav-items > ul > li:hover {
+    color: whitesmoke;
+}
+
+.nav-items > ul > li:hover::before {
+    transform: scaleX(1); /* Expand border horizontally */
+}
+
+.nav-items > ul > li:hover::after {
+    transform: scaleY(1); /* Expand background vertically */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------- End of the transition of  Navigation items ------------*/
+
+
+
+
+
+
 
 
 .navigation-bar {
@@ -141,6 +265,7 @@
 
     position: relative;
     /*border: 5px solid fuchsia;*/
+    /*background: aquamarine;*/
 
 
 }
@@ -151,7 +276,6 @@
 
 .logo {
     position: relative;
-
     /*border: 5px solid deepskyblue;*/
 }
 
@@ -344,11 +468,16 @@
 }
 
 
+
+
+/*
+
+
 .btn-cv-download>button {
 
     width: 210px;
     height: 45px;
-    /*background-color: aqua;*/
+    !*background-color: aqua;*!
 
     border-style: none;
 
@@ -365,6 +494,88 @@
 
 }
 
+*/
+
+
+
+
+
+/*Adding styles to download-cv button*/
+
+.btn-cv-download>button {
+
+    padding: 0.75em 2em;
+    background-color: #161a20;
+    border: none;
+    color: #f0f0f0;
+    border-radius: 1000px;
+    font-family: "Segoe UI",serif, Tahoma, Verdana;
+    position: relative;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+
+
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn-cv-download>button::after {
+
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #008cff,  #e100ff);
+    z-index: -1;
+
+}
+
+.btn-cv-download>button:hover {
+
+    z-index: 0;
+    box-shadow: 40px 0 100px rgba(0, 140, 255, 0.4), -40px 0 100px rgba(225, 0, 255, 0.4);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------*/
 
 
 
@@ -395,8 +606,19 @@
     margin-top: 0;
     /*align-self: end;*/
 
+    position: relative;
+
 
 }
+
+
+
+
+
+
+
+
+
 
 
 /*-------------------------------Hero Section---------------------------------------------*/
@@ -506,7 +728,92 @@
     margin-bottom: 50px;
 
 
+
 }
+
+
+
+/*Adding styles to source-code buttons*/
+
+
+.btn>button {
+
+    padding: 0.5em 1.5em;
+    background-color: #161a20;
+    border: none;
+    color: #f0f0f0;
+    border-radius: 1000px;
+    font-family: "Segoe UI",serif, Tahoma, Verdana;
+    position: relative;
+
+    margin-top: 15px;
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn>button::after {
+
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #008cff,  #e100ff);
+    z-index: -2;
+
+}
+
+.btn>button:hover {
+
+    z-index: 0;
+    box-shadow: 40px 0 100px rgba(0, 140, 255, 0.4), -40px 0 100px rgba(225, 0, 255, 0.4);
+
+
+}
+
+
+/*---------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -518,13 +825,20 @@
     /*width: 20vw;*/
 
     /*border: 2px solid lemonchiffon;*/
+
     background-color: #202531;
+
+
+
+
     box-shadow: 5px 5px 10px rgba(69, 69, 69);
 
     border-radius: 25px;
 
 
-    margin: 5px;
+    margin: 15px;
+
+    padding: 10px;
 
     /*background-color: #202531;*/
 
@@ -533,10 +847,86 @@
     justify-content: center;
     align-items: center;
 
-    /*position: relative;*/
+    position: relative;
+
+    z-index: auto;
+    /*z-index: 2;*/
+
+
 
 
 }
+
+/*Trying an animation */
+
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+
+
+.project-item::after, .project-item::before {
+
+    /*--angle: 0deg;*/
+
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+
+    border-radius: 25px;
+
+
+    background-image: conic-gradient(from var(--angle),transparent 70%, rgba(12, 6, 255, 0.42), rgba(88, 249, 210, 0.66), rgba(162, 44, 191, 1), rgba(0, 255, 255, 1), rgba(12, 6, 255, 0.42));
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*translate: -50% -50%;*/
+
+    /*padding: 3px;*/
+
+    z-index: -1;
+
+
+    animation: 3s spin linear infinite;
+
+}
+
+.project-item::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+
+}
+
+
+
+@keyframes spin{
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  End of the animation   */
 
 
 #see-more {
@@ -571,18 +961,19 @@
 
 
 
+/*
 
 
 .btn>button {
 
-    /*width: fit-content;*/
-    /*height: fit-content;*/
+    !*width: fit-content;*!
+    !*height: fit-content;*!
 
     width: 120px;
     height: 35px;
 
 
-    /*background-color: aqua;*/
+    !*background-color: aqua;*!
 
     margin-top: 10px;
     border-radius: 5px;
@@ -594,24 +985,33 @@
 
     font-family: "Lato", sans-serif;
     font-size: 15px;
-    /*font-weight: bold;*/
+    !*font-weight: bold;*!
 
 
-    /*position: absolute;*/
+    !*position: absolute;*!
 
-    /*bottom: 20px;*/
-    /*left: 0;*/
-    /*right: 0;*/
+    !*bottom: 20px;*!
+    !*left: 0;*!
+    !*right: 0;*!
 
 
-    /*margin: auto;*/
+    !*margin: auto;*!
 
 }
+
+
+
+*/
+
+
+
+/*
 
 .btn {
     background-color: #202531;
 }
 
+*/
 
 
 
@@ -769,7 +1169,21 @@
     justify-content: center;
 
 
+
+
+
+
 }
+
+
+/*Trying an border animation here*/
+
+
+
+
+
+
+
 
 
 .service-card>h3 {
@@ -829,6 +1243,14 @@
 
 
 
+
+/*Trying an animation for service section*/
+
+
+
+
+
+/*Trying an animation for service section*/
 
 
 
