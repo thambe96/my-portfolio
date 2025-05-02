@@ -1321,7 +1321,9 @@ body {
 
     border-radius: 10px;
 
-    border: 2px solid lemonchiffon;
+    background-color: #202531;
+
+    border: 2px solid rgba(0, 140, 255, 0.25) /*lemonchiffon*/;
 
     margin-top: 25px;
 
@@ -1355,7 +1357,8 @@ body {
 
     border-radius: 10px;
 
-    border: 2px solid lemonchiffon;
+    background-color: #202531;
+    border: 2px solid rgba(0, 140, 255, 0.25)/*lemonchiffon*/;
 
     margin-top: 25px;
     margin-bottom: 25px;
