@@ -1402,8 +1402,143 @@ body {
 
 
 
+/* -------------------- Assignment Section  -----------------------------  */
 
 
+.assignment-container {
+
+    width: fit-content;
+    height: fit-content;
+
+    border: 2px solid red;
+
+    margin-top: 80px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    /*position: absolute;*/
+    transform: translate(50%, 0);
+
+
+
+
+
+
+
+}
+
+.assignment-card {
+
+    width: 50vw;
+    min-height: 10vh;
+    background: #008cff;
+
+    /*margin-top: 5px;*/
+    /*margin-bottom: 5px;*/
+    margin: 5px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------End of the Assignment Section ----------------*/
+
+
+
+
+
+/*------------------ Section footer  ---------------------------------------------------------- */
+
+
+
+
+
+.footer-container {
+
+
+    margin-top: 50px;
+
+    min-height: 15vh;
+
+
+    background: #0b0d15;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    /*align-items: center;*/
+
+
+
+
+}
+
+.footer-note {
+
+    color: whitesmoke;
+    text-align: center;
+    /*background: crimson;*/
+    font-family: "Segoe UI",serif, Tahoma, Verdana;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+
+}
+
+.social-handles-container {
+
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    /*background: red;*/
+
+
+}
+
+.social-handle {
+
+    margin: 10px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------- End of the footer section --------------------------------------------------*/
 
 
 
