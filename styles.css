@@ -1297,6 +1297,12 @@ body {
 
     /*border: 5px solid grey;*/
 
+    /*width: fit-content;*/
+    height: fit-content;
+
+    /*border: 5px solid red;*/
+
+
     margin-top: 50px;
 
     display: flex;
@@ -1378,6 +1384,7 @@ body {
 
 
 
+/*
 
 .contact-form>button {
 
@@ -1386,7 +1393,7 @@ body {
 
     border: none;
 
-    /*background-color: aqua;*/
+    !*background-color: aqua;*!
     border: 2px solid aquamarine;
 
     border-radius: 10px;
@@ -1402,6 +1409,105 @@ body {
 
 }
 
+*/
+
+/*-----------------------adding a style to submit button----------------------------*/
+
+
+
+
+.contact-form>button {
+
+    width: 200px;
+    height: 40px;
+
+    padding: 0.75em 2em;
+    background-color: #161a20;
+    border: none;
+    color: #f0f0f0;
+    border-radius: 1000px;
+    font-family: "Segoe UI",serif, Tahoma, Verdana;
+    position: relative;
+
+
+
+    /*
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+
+    */
+
+    align-self: end;
+
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-form>button::after {
+
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 101%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #008cff,  #e100ff);
+    z-index: -1;
+
+}
+
+.contact-form>button:hover {
+
+    z-index: 0;
+    box-shadow: 40px 0 100px rgba(0, 140, 255, 0.4), -40px 0 100px rgba(225, 0, 255, 0.4);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1413,7 +1519,7 @@ body {
     width: fit-content;
     height: fit-content;
 
-    border: 2px solid red;
+    /*border: 2px solid red;*/
 
     margin-top: 80px;
     margin-bottom: 80px;
@@ -1436,16 +1542,88 @@ body {
 .assignment-card {
 
     width: 50vw;
-    min-height: 10vh;
-    background: #008cff;
+    min-height: 30vh;
+    border-radius: 10px;
+
+    background: rgba(238, 238, 238, 0.86);
+    box-shadow: 5px 5px 10px rgba(69, 69, 69);
 
     /*margin-top: 5px;*/
     /*margin-bottom: 5px;*/
-    margin: 5px;
+    margin: 15px;
 
+    /*grid-template-columns: repeat(2, 1fr);*/
+
+    display: flex;
 
 
 }
+
+
+.assignment-ss {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.assignment-ss>img {
+
+    max-width: 200px;
+
+    padding: 10px;
+    margin: 10px;
+
+
+}
+
+
+.assignment-content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+.assignment-title {
+
+    color: #0b0d15;
+    font-size: 25px;
+
+    font-family: "Segoe UI",serif, Tahoma, Verdana;;
+
+    margin-bottom: 10px;
+
+
+}
+
+
+.assignment-desc {
+
+    color: #202531;
+    /*font-size: 18px;*/
+    margin-bottom: 20px;
+    margin-right: 10px;
+
+    text-align: left;
+
+
+
+    font-family: "Segoe UI",serif, Tahoma, Verdana;;
+
+}
+
+.assignment-link-btn {
+
+
+}
+
 
 
 
