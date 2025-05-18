@@ -22,9 +22,9 @@
         <div class="logo">
             <h1>Portfolio</h1>
         </div>
-        <div class="nav-items">
+        <div class="nav-items" id="nav-bar-container">
 
-            <ul>
+            <ul id="menu-list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Project</a></li>
@@ -34,6 +34,11 @@
             </ul>
 
         </div>
+
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+
     </nav>
 </header>
 
@@ -52,7 +57,7 @@
 
                 <div class="detial-text">
 
-                    <h3>Hello It's Me 👋👋👋</h3>
+                    <h3>Hello It's Me 👋</h3>
                     <h1>Oshadha Thambavita</h1>
                     <h2>And I am a Full Stack Developer</h2>
                     <p>
@@ -134,7 +139,7 @@
         </div>
 
         <div class="about-me-container">
-            <h3>Full Stack Developer</h3>
+            <h3>VISION<!--Full Stack Developer--></h3>
             <p>
                 My journey in web development began with a curiosity for how things work behind the
                 scenes. Over the years, I have honed my skills in a variety of programming languages and
@@ -635,6 +640,33 @@
 
 </main>
 
+
+<!-- This Script is for making the nav-bar responsive-->
+<script>
+
+    let menuList = document.getElementById("nav-bar-container");
+    let hero_cont = document.getElementById("hero-container");
+    menuList.style.maxHeight = "0px";
+    hero_cont.style.marginTop = "0px";
+
+    function toggleMenu() {
+
+
+        if (menuList.style.maxHeight === "0px") {
+            menuList.style.maxHeight = "300px";
+            hero_cont.style.marginTop = "300px";
+
+        } else {
+            menuList.style.maxHeight = "0px";
+            hero_cont.style.marginTop = "0px";
+
+        }
+
+
+
+    }
+
+</script>
 
 <script src="assests/lib/fontawesome/js/all.min.js"></script>
 </body>

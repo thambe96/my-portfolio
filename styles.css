@@ -250,10 +250,15 @@ body {
 
 
 .navigation-bar {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /*display: grid;*/
+    display: flex;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    align-items: center;
+    justify-content: space-between;
 
     padding: 20px;
+
+    /*border: 5px solid purple;*/
 
 
 
@@ -267,6 +272,11 @@ body {
     /*border: 5px solid fuchsia;*/
     /*background: aquamarine;*/
 
+    /*background-color: mediumspringgreen;*/
+
+    margin-bottom: 20px;
+
+
 
 }
 
@@ -277,6 +287,11 @@ body {
 .logo {
     position: relative;
     /*border: 5px solid deepskyblue;*/
+
+
+    /*background-color: aqua;*/
+
+
 }
 
 .logo>h1 {
@@ -296,6 +311,21 @@ body {
 
 
 
+}
+
+
+.menu-icon {
+    /*background-color: purple;*/
+    /*display: none;*/
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon{
+    color: white;
+    font-size: 30px;
 }
 
 /*-------------------------------Navigation Section---------------------------------------------*/
@@ -385,29 +415,32 @@ body {
 
 .detial-text>h3 {
     font-family: "League Spartan", sans-serif;
-    font-size: 40px;
+    font-size: 2em/*40px*/;
     padding-left: 60px;
 
 }
 
 .detial-text>h1 {
     font-family: "League Spartan", sans-serif;
-    font-size: 70px;
+    font-size: 3em/*70px*/;
     padding-left: 60px;
 
 }
 
 .detial-text>h2 {
     font-family: "League Spartan", sans-serif;
-    font-size: 45px;
+    font-size: 2em/*45px*/;
     padding-left: 60px;
 
 }
 
 .detial-text>p {
     font-family: "Lato", sans-serif;
-    font-size: 20px;
+    font-size: 23px/*1em*//*20px*/;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 60px;
+    text-align: left;
 
 }
 
@@ -671,6 +704,11 @@ body {
 .about-me-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+
+
+
+
 }
 
 
@@ -692,16 +730,25 @@ body {
 
 .about-me-container> h3 {
     font-family: "League Spartan", sans-serif;
-    font-size: 45px;
+    font-size: 2em/*45px*/;
+    text-align: left;
 
 }
 
 .about-me-container> p {
-    font-family: "Lato", sans-serif;
-    font-size: 26px;
+    font-family: "League/*Lato*/", sans-serif;
+    font-size: 26px/*1em*//*26px*/;
     /*background-color: firebrick;*/
+    text-align: left;
 
-    padding-right: 60px;
+    padding-top: 40px;
+    padding-right: 40px;
+    /*padding-left: 40px;*/
+    padding-bottom: 40px;
+
+
+
+    /*background-color: #202531;*/
 
 }
 
@@ -1783,17 +1830,24 @@ body {
         display: none;
     }
 
+
+
+    /*
+
     .navigation-bar {
         display: none;
     }
 
+    */
 
     #hero-container {
 
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
 
+
     }
+
 
     .about-me {
 
@@ -1801,6 +1855,8 @@ body {
         grid-template-rows: repeat(2, 1fr);
 
     }
+
+
 
 
 
@@ -1854,6 +1910,56 @@ body {
         display: none;
     }
 
+
+
+
+}
+
+
+
+/*making navigation bar responsive*/
+
+@media all and (max-width: 700px){
+
+    .nav-items {
+
+        position: absolute;
+        top: 70px;
+
+        background-color: rgba(29, 29, 41, 0.98); /* #202531*/
+
+        overflow: hidden;
+
+        transition: all 0.5s;
+
+
+
+    }
+
+    .nav-items ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+        /*background-color: red;*/
+    }
+
+    .nav-items ul li{
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /*
+
+    .header {
+        margin-bottom: 300px;
+    }
+
+    */
 
 
 
