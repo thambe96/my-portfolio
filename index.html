@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="assests/normalize.css">
     <link rel="stylesheet" href="assests/lib/fontawesome/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
 
@@ -55,9 +56,11 @@
             <!--     /*-------------------------------Hero Right Section---------------------------------------------*/-->
 
 
-            <div id="hero-container-col-left">
+            <div id="hero-container-col-left" data-aos="zoom-in">
 
-                <div class="detial-text">
+                <div class="detial-text" data-aos="flip-left"
+                     data-aos-easing="ease-out-cubic"
+                     data-aos-duration="2000">
 
                     <h3>Hello It's Me 👋</h3>
                     <h1>Oshadha Thambavita</h1>
@@ -98,7 +101,10 @@
 
 
 
-            <div id="hero-container-col-right">
+            <div id="hero-container-col-right" data-aos="flip-left"
+                 data-aos-easing="ease-out-cubic"
+                 data-aos-duration="2000">
+
                 <img src="assests/images/hero section/hero section.jpg" alt="hero section image"  class="image" id="img1">
             </div>
 
@@ -131,7 +137,7 @@
 
 
 
-    <section id="about-section" class="about-me">
+    <section id="about-section" class="about-me" data-aos="fade-up" data-aos-duration="3000">
 
 
 
@@ -140,7 +146,7 @@
             <!--                style="width: 250px;height: 300px"-->
         </div>
 
-        <div class="about-me-container">
+        <div class="about-me-container" data-aos="fade-up" data-aos-duration="3000">
             <h3>VISION<!--Full Stack Developer--></h3>
             <p>
                 My journey in web development began with a curiosity for how things work behind the
@@ -359,7 +365,8 @@
     <!-----------------  ---------------------  Service Section  ---------------------  ---------------------------->
 
 
-    <section id="service-section" class="services-section">
+    <section id="service-section" class="services-section" data-aos="fade-up"
+             data-aos-duration="3000">
 
         <!--            <div id="services" class="section-breaker"><h2>Services</h2></div>-->
 
@@ -463,7 +470,7 @@
     <!-- Assignment Section   ----------------------------------------------------------->
 
 
-    <section id="assignment-section" class="assignment-section">
+    <section id="assignment-section" class="assignment-section" data-aos="fade-up" data-aos-duration="3000">
 
 
 
@@ -668,8 +675,16 @@
 
     }
 
+
 </script>
 
 <script src="assests/lib/fontawesome/js/all.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+
 </body>
 </html>
