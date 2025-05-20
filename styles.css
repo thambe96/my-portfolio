@@ -791,7 +791,12 @@ html {
 /*Adding styles to source-code buttons*/
 
 
-.btn>button {
+.btn>a {
+    text-decoration: none;
+}
+
+.btn>a>button {
+
 
     padding: 0.5em 1.5em;
     background-color: #161a20;
@@ -811,7 +816,7 @@ html {
 
 }
 
-.btn>button::after {
+.btn>a>button::after {
 
     content: '';
     position: absolute;
@@ -823,7 +828,7 @@ html {
 
 }
 
-.btn>button:hover {
+.btn>a>button:hover {
 
     z-index: 0;
     box-shadow: 40px 0 100px rgba(0, 140, 255, 0.4), -40px 0 100px rgba(225, 0, 255, 0.4);
@@ -907,7 +912,7 @@ html {
     z-index: auto;
     /*z-index: 2;*/
 
-
+    transition: 1s;
 
 
 }
@@ -915,7 +920,9 @@ html {
 /*Trying an animation */
 
 
-
+.project-item:hover {
+    transform: scale(1.1);
+}
 
 
 
@@ -931,21 +938,30 @@ html {
 
 #see-more {
 
+
+  /*
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
 
+    */
+
     /*background-color: #060606;*/
 
 }
 
+
+
+
 #see-more>button {
+
+/*
 
     width: 150px;
     height: 40px;
 
-    /*background-color: aquamarine;*/
+    !*background-color: aquamarine;*!
 
     border-radius: 10px;
     border: none;
@@ -956,6 +972,9 @@ html {
     font-family: "Lato", sans-serif;
     font-size: 18px;
     font-weight: bold;
+
+    */
+
 
 }
 
@@ -1027,7 +1046,7 @@ html {
     background-color: #202531;
 
     font-family: "League Spartan", sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
 
     /*position: absolute;*/
@@ -1044,6 +1063,16 @@ html {
     justify-content: center;
 }
 
+.project-ss > img {
+
+    max-width: 200px;
+
+    padding: 10px;
+    margin: 10px;
+
+
+
+}
 
 
 
