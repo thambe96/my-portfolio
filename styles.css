@@ -1065,7 +1065,8 @@ html {
 
 .project-ss > img {
 
-    max-width: 200px;
+    max-width: 250px;
+    border-radius: 20px;
 
     padding: 10px;
     margin: 10px;
