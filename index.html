@@ -58,12 +58,16 @@
 
             <div id="hero-container-col-left" data-aos="zoom-in">
 
-                <div class="detial-text" data-aos="flip-left"
-                     data-aos-easing="ease-out-cubic"
-                     data-aos-duration="2000">
+ <!--               data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+
+                -->
+
+                <div class="detial-text" >
 
                     <h3>Hello It's Me 👋</h3>
-                    <h1>Oshadha Thambavita</h1>
+                    <h1 id="dev-name"><!--Oshadha Thambavita--></h1>
                     <h2>And I am a Full Stack Developer</h2>
                     <p>
                         Hello! I’m Oshadha Thambavita, a passionate Full Stack Developer with a knack for transforming ideas into
@@ -727,8 +731,29 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>
+
+
     AOS.init();
+
+
+    let typedText = document.getElementById('dev-name');
+    let textToType = 'Oshadha Thambavita';
+    let index = 0;
+    function typeText() {
+        if (index < textToType.length) {
+            typedText.textContent += textToType[index];
+            index++;
+            setTimeout(typeText, 150); // adjust the speed here
+        }
+    }
+
+    typeText();
+
+
+
 </script>
+
+
 
 
 </body>
