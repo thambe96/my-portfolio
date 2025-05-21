@@ -337,6 +337,11 @@ html {
 
 
 
+/*making responsive-section breaker invisible*/
+
+.responsive-sec-breaker {
+    display: none;
+}
 
 
 
@@ -1904,6 +1909,17 @@ html {
     }
 
 
+    .responsive-sec-breaker {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 28px;
+        font-weight: bold;
+        font-family: "League Spartan", sans-serif;
+    }
+
+
 
     /*
 
@@ -1992,7 +2008,7 @@ html {
 
 /*making navigation bar responsive*/
 
-@media all and (max-width: 700px){
+@media all and (max-width: 850px/*700px*/){
 
     .nav-items {
 
@@ -2033,6 +2049,158 @@ html {
     }
 
     */
+
+
+
+    /* making hero section  responsive*/
+
+    .about-me-container > p {
+
+        font-size: 20px;
+        position: relative;
+        text-align: center;
+
+
+    }
+
+    .about-me-container > h3 {
+        text-align: center;
+    }
+
+
+
+}
+
+@media all and (max-width: 850px) {
+
+
+
+    .assignment-card {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .assignment-desc {
+        text-align: center;
+    }
+
+    .project-item {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .service-card {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+
+
+
+}
+
+@media all and (max-width: 650px) {
+
+    #img1 {
+
+
+        width: 300px;
+        /*border: 2px solid aquamarine;*/
+        border-radius: 20px;
+
+        box-shadow: 5px 5px 10px rgba(69, 69, 69);
+
+        /*margin-left: 300px;*/
+        align-self: center;
+        margin-top: 0;
+        /*align-self: end;*/
+
+        position: relative;
+
+
+    }
+
+
+    #about-section {
+
+
+
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me-col-left {
+
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        /*justify-content: center;*/
+        position: relative;
+
+    }
+
+
+    #img2 {
+        width: 300px;
+        /*border: 2px solid aquamarine;*/
+        border-radius: 20px;
+
+        /*box-shadow: 5px 5px 10px rgba(69, 69, 69);*/
+
+        /*margin-left: 300px;*/
+        /*align-self: center;*/
+        /*margin-top: 0;*/
+        /*align-self: end;*/
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+
+
+
+
+    }
+
+
+
+
+
+    .detial-text > h3 {
+        font-size: 26px;
+    }
+    .detial-text > h2 {
+        font-size: 22px;
+    }
+
+    #dev-name {
+        font-size: 26px;
+    }
+
+    .detial-text > p {
+        font-size: 18px;
+    }
+
+    .about-me-container > h3 {
+
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .about-me-container > p {
+
+        font-size: 20px;
+        position: relative;
+        text-align: center;
+
+
+    }
 
 
 
